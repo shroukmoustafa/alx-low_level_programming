@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry Point
+ * In function 'main' - Entry Point
  *
  * Description: A C program that prints with put function
  *
@@ -19,17 +19,17 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 
 	last_digit = (n % 10);
-		if {
+		if (
 		(last_digit >= 5);
 			printf("Last digit of %d is %d and is greater than 5", n, last_digit);
-		}
-		if {
+		   )
+		if (
 		(last_digit == 0);
 			printf("Last digit of %d is %d and is 0", n, last_digit);
-		}
-		if {
+		   )
+		if (
 		(6 >= last_digit != 0);
 		        printf("Last digit of %d is %d and is less than 6 and not 0", n,last_digit);
-		}
+		   )
 	return (0);
 }
