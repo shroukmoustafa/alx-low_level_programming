@@ -1,15 +1,13 @@
-#include <stdio.h>
+#include <unistd.h>
 
 /**
- * main - Entry point
+ * _putchar - function prints character c to stdout
+ * @c: the character to print
  *
- * Description: this program prints _putchar
- *
- * Return: Always 0 (success)
+ * Return: 1 (success) , -1 (fail)
 */
 
-int main(void)
+int _putchar(char c)
 {
-	printf("_putchar");
-	return (0);
+	return (write(1, &c, 1));
 }
