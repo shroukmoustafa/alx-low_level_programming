@@ -4,7 +4,8 @@
  * mul - Entry point
  * a function that multiplies two integers
  *
- * @a, b: the operated integers
+ * @a: the operated integer
+ * @b: the operated integer
  *
  * Return: result
 */
