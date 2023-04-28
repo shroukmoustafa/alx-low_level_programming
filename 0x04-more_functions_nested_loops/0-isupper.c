@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * _isupper - hecks for uppercase character
+ * _isupper - Entry point
+ * hecks for uppercase character
  *
  * @c: is the checked number
  *
