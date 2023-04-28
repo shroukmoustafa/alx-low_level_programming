@@ -1,10 +1,10 @@
-#ifndef main_h
-#define main_h
+#ifndef MAIN_H
+#define MAIN_H
 
-int _putchar (char ch);
-void print_alphabet(void);
-int _isupper(int c);
-
+extern int _putchar (char ch);
+extern void print_alphabet(void);
+extern int _isupper(int c);
+extern int _isdigit(int c);
 
 
 
