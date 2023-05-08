@@ -1,16 +1,16 @@
 #include "main.h"
-#include <string.h>
-
-/**
- * _strlen - a function that returns the length of a string.
- *
- * @s: a string that is measuring its length
-*/
+ /**
+  * _strlen - a function that returns the length of a string.
+  * 
+  * @s: the string to be measured */
 
 int _strlen(char *s)
 {
-	int counter;
-	for (counter = 0; *s != '\0'; s++)
-		++counter;
-	return (counter);
+	int i = 0;
+	while (*s >= 32)
+	{
+		i++;
+		s++;
+	}
+	return (i);
 }
