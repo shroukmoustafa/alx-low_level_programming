@@ -36,7 +36,7 @@ char *_strstr(char *haystack, char *needle);
 void print_chessboard(char (*a)[8]);
 int is_prime_number(int n);
 void _puts_recursion(char *s);
-
+void _print_rev_recursion(char *s);
 
 
 
