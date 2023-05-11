@@ -19,5 +19,9 @@ int _pow_recursion(int x, int y)
 	{
 		sqrt = x * _pow_recursion(x, (y - 1));
 	}
-	return(sqrt);
+	else if (y < 0)
+	{
+		sqrt = (1 / (x * _pow_recursion(x, (y - 1))));
+	}
+	return (sqrt);
 }
