@@ -5,7 +5,7 @@
  *  input integer is a prime number, otherwise return 0.
  *
  *  @n: the number to be checked
- *
+ *@x:is a natural number less than n
  *Return: (1) if the number is prime, (1) if the number not prime
 */
 
