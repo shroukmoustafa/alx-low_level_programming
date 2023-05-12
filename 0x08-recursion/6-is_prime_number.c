@@ -31,12 +31,10 @@ int dividing(int n, int x)
 {
 	if (x == 1)
 		return (1);
+	if (n % x == 0)
+		return (0);
 	if (n % x != 0)
 	{
 		dividing(n, (x - 1));
-	}
-	else if (n % x == 0)
-	{
-		return (0);
 	}
 }
