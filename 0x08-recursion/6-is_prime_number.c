@@ -9,6 +9,7 @@
  *Return: (1) if the number is prime, (1) if the number not prime
 */
 
+int dividing(int n, int x);
 int is_prime_number(int n)
 {
 	if (n == 1)
@@ -34,5 +35,5 @@ int dividing(int n, int x)
 	if (n % x != 0)
 		dividing(n, (x - 1));
 	else if (n % x == 0)
-		return (0)
+		return (0);
 }
