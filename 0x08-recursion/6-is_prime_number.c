@@ -35,6 +35,6 @@ int dividing(int n, int x)
 	{
 		return (dividing(n, (x - 1)));
 	}
-	if (n % x == 0)
+	else
 		return (0);
 }
