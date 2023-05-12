@@ -18,7 +18,6 @@ int is_prime_number(int n)
 		return (0);
 	return (dividing(n, (n - 1)));
 }
-
 /**
  * dividing -  a function that checks the mouduls of n
  *
@@ -35,5 +34,7 @@ int dividing(int n, int x)
 	if (n % x != 0)
 		dividing(n, (x - 1));
 	else if (n % x == 0)
+	{
 		return (0);
+	}
 }
