@@ -5,7 +5,7 @@
  * alloc_grid - a function that returns a pointer to
  *  a 2 dimensional array of integers.
  *  @width: width
- *  @hight:  hight
+ *  @height:  hight
  *  Return: NULL on failure, pointer on success
 */
 
@@ -31,7 +31,7 @@ int **alloc_grid(int width, int height)
 				return (NULL);
 			}
 			for (j = 0; j < width; j++)
-				tab[i][j] = 0; 
+				tab[i][j] = 0;
 		}
 	}
 	return (tab);
