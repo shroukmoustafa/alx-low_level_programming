@@ -26,7 +26,7 @@ char *str_concat(char *s1, char *s2)
 	if (str == NULL)
 		return (NULL);
 	n = 0;
-	for (k = 0; k <= (i + 1); k++)
+	for (k = 0; k <= (i + j + 1); k++)
 	{
 			if (k <= i)
 			{
@@ -34,11 +34,11 @@ char *str_concat(char *s1, char *s2)
 			}
 			if (k == (i + 1))
 				str[k] = '\0';
-	}
-	for (;k <= (i + j + 1); k++)
-	{
+			if (k > (i + 1))
+			{
 			str[k] = s2[n];
 			n++;
+			}
 	}
 	str[k] = '\0';
 	return (str);
