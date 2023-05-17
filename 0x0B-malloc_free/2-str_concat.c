@@ -26,15 +26,13 @@ char *str_concat(char *s1, char *s2)
 	if (str == NULL)
 		return (NULL);
 	n = 0;
-	for (k = 0; k <= (i + j + 1); k++)
+	for (k = 0; k <= (i + j); k++)
 	{
-			if (k <= i)
+			if (k < i)
 			{
 				str[k] = s1[k];
 			}
-			if (k == (i + 1))
-				str[k] = '\0';
-			if (k > (i + 1))
+			if (k >= i)
 			{
 			str[k] = s2[n];
 			n++;
