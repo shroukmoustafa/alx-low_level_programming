@@ -1,7 +1,7 @@
 #include "stdio.h"
 #include "stdlib.h"
 /**
- * main - a program that prints the minimum number of 
+ * main - a program that prints the minimum number of
  * coins to make change for an amount of money.
  * @argc: arrgument counter
  * @argv: arrgument values
@@ -15,7 +15,7 @@ int main(int argc, char **argv)
 		int cents[] = {25, 10, 5, 2, 1};
 
 		money = atoi(argv[1]);
-		for(i = 0; i < 5; i++)
+		for (i = 0; i < 5; i++)
 		{
 			if (money >= cents[i])
 			{
