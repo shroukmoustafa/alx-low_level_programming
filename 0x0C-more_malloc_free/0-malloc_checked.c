@@ -3,7 +3,8 @@
 
 /**
  * malloc_checked - a function that allocates memory using malloc
- * @b: */
+ * @b: number of nedded memory
+ * Return: pointer on success, 98 on fail */
 
 void *malloc_checked(unsigned int b)
 {
