@@ -31,7 +31,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 	}
 	f = 0;
-	for (k = 0; k <= (i + n); k++)
+	for (k = 0; k <= (i + n - 1); k++)
 	{
 		if (k < i)
 		{
