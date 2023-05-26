@@ -19,15 +19,16 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		printf("\n");
 		return;
 	}
-	while(i--)
+	while (i--)
 	{
 		str = va_arg(ptr, char *);
-		if ((*str == '\0'))
-				printf("nil");
-		printf("%s", str);
-		if (*separator != '\0' && (i != 0))
-			printf("%s", separator);
+		if (*str != '\0' && *separator != '\0')
+			printf("%s%s", str, (i != 0 ? separator : ""));
+		if (*str == '\0' && *separator != '\0')
+				printf("nil%s",(i != 0 ? separator : ""));
+		if (*separator == '\0')
+			printf("%s", (str ? str : "nil"));
 	}
-	va_end(ptr); 
+	va_end(ptr);
 	printf("\n");
 }
