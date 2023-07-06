@@ -1,10 +1,17 @@
 #include "main.h"
 /**
- * _sqrt_recursion -  a function that returns the natural square root of a number.
- * @n : the number to take squer root of
+ * res1 - a function
+ * @g: assumed number
+ * @n: number
  * Return: result
 */
 int res1(int n, int g);
+/**
+ * _sqrt_recursion -  a function that returns the natural
+ * square root of a number.
+ * @n : the number to take squer root of
+ * Return: result
+*/
 int _sqrt_recursion(int n)
 {
 	int z;
@@ -16,12 +23,12 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	else 
+	else
 		return (z);
 }
 /**
- * res1 - a function 
- * @g: numbet
+ * res1 - a function
+ * @g: assumed number
  * @n: number
  * Return: result
 */
