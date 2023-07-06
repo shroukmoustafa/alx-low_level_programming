@@ -32,7 +32,7 @@ int res1(int n, int g)
 	if (g * g > n)
 		g = res1(n, (g - 1));
 	if (g * g < n)
-		g = res1(n, (g - 1));
+		g = res1(n, (g + 1));
 	return (g);
 }
 
