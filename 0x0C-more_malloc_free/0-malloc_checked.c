@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlib>
+#include <stdlib.h>
 /**
  * malloc_checked - a function that allocates memory using malloc
  * @b: number of bites
@@ -7,9 +7,8 @@
 */
 void *malloc_checked(unsigned int b)
 {
-	int *ptr,
+	void *ptr = malloc(b);
 	
-	ptr = malloc(b);
 	if (ptr == NULL)
 	{
 		exit(98);
