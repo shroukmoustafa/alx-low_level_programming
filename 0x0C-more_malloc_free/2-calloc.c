@@ -1,6 +1,5 @@
 #include "main.h"
-#include <stdlib.h>
-
+#include "stdlib.h"
 /**
  * _memset - a function that filles memory
  * @s: pointer
@@ -16,20 +15,23 @@ char *_memset(char *s, char b, unsigned int n)
 		*s++ = b;
 	return (ptr);
 }
-/**
- * _calloc - a function that allocates memory for an array, using malloc
- * @nmemb: array members number
- * @size: the size of each member
- * Return: pointer on success, NULL on failuer
-*/
 
+/**
+ * _calloc - a function that allocates memory for an array, using malloc.
+ * @nmemb: number of elements of thea array
+ * @size: number of bytes needed
+ * Return: pointer on success, NULL on faileur
+*/
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	if (nmemb || size == 0)
+	void *p;
+
+	if (nmemb == 0 || size == 0)
 		return (NULL);
-	void *array = malloc (nmemb * sizeof(int));
-	if (array == NULL)
+	p = malloc(sizeof(int) * nmemb);
+	if (p == NULL)
 		return (NULL);
-	_memset(array, 0, sizeof(int) * nmemb);
-	return (array);
+	_memset(p, 0, sizeof(int) * nmemb);
+	return (p);
 }
+
