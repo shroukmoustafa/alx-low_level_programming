@@ -11,7 +11,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_list ptr;
 	unsigned int i;
 
-	if(!n)
+	if(!n || (n == 0))
 	{
 		printf("\n");
 		return;
