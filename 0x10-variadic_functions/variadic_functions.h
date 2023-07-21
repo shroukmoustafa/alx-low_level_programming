@@ -1,6 +1,6 @@
 #ifndef variadic_functions_h
 #define variadic_functions_h
-
+#include <stdarg.h>
 /**
  * struct token - struct token
  * @token: format token
