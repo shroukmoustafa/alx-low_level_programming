@@ -1,6 +1,7 @@
 #include "lists.h"
 #include <stdlib.h>
 #include <stddef.h>
+#include <stdio.h>
 /**
  * print_listint -  function that prints all the elements of a listint_t list.
  * @h: is a head pointer
@@ -16,6 +17,7 @@ size_t print_listint(const listint_t *h)
 	{
 		if (temp != NULL)
 		{
+			printf("%d\n", temp->n);
 			count++;
 			temp = temp->next;
 		}
