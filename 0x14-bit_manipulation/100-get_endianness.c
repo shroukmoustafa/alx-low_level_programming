@@ -6,11 +6,11 @@
 */
 int get_endianness(void)
 {
-	unsigned int va(lue;
+	unsigned int value;
 	unsigned char *byte;
 
 	value = 1;
-	*byte = (unsigned char *)&value;
+	byte = (unsigned char *) &value;
 	if (*byte)
 		return (1);
 	else
